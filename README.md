@@ -1,5 +1,5 @@
 # React Tic Tac Toe
-A Tic Tac Toe game with AI built with React and Redux. View demo at:  https://codesandbox.io/s/github/tuanpm1308/react-tic-tac-toe-ai/tree/master/?view=preview
+A Tic Tac Toe game with unbeatable AI built with React and Redux. View demo at:  https://codesandbox.io/s/github/tuanpm1308/react-tic-tac-toe-ai/tree/master/?view=preview
 
 Design is from https://dribbble.com/shots/3402966-Tic-Tac-Toe
 

@@ -48,17 +48,13 @@ export class Board extends Component {
     }
   }
 
-  aiMove(rand) {
+  aiMove() {
     if (!this.props.isGameEnd && !this.props.isPvP && this.props.isTurnAI) {
-      const move = rand ? Math.floor(Math.random() * 8) : findBestMove(new GameBoard(this.props.squares, this.props.isTurnX ? 'x' : 'o'));
+      const move = this.props.squares.filter(square => square).length === 0 ? Math.floor(Math.random() * 8) : findBestMove(new GameBoard(this.props.squares, this.props.isTurnX ? 'x' : 'o'));
 
       this.handleClick(move, true);
       this.props.setAITurn(false);
     }
-  }
-
-  componentDidMount() {
-    this.aiMove(true);
   }
 
   componentDidUpdate() {
